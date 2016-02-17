@@ -36,7 +36,7 @@ table {
           <td>{{ impression.comment|linebreaksbr }}</td>
           <td>
             <a href="{% url 'cms:impression_mod' book_id=book.id impression_id=impression.id %}" class="btn btn-default btn-sm">修正</a>
-            <button class="btn btn-default btn-sm del_confirm" data-toggle="modal" data-target="#deleteModal" pk="{{ impression.id }}" url="{% url 'cms:impression_del' book_id=book.id impression_id=impression.id %}">削除</a>
+            <button class="btn btn-default btn-sm del_confirm" data-toggle="modal" data-target="#deleteModal" pk="{{ impression.id }}" url="{% url 'cms:impression_del' book_id=book.id impression_id=impression.id %}">削除</button>
           </td>
         </tr>
         {% endfor %}
